@@ -22,3 +22,6 @@ This is an application used to dynamically create README files using node.js, fs
 - After all of the questions are answered, "Success!" will be displayed and the README file will be generated.
 - (optional) Manually make any edits you want to (typos, removing unneeded sections, etc.)
 - You now have a functional README file.
+
+## Screenshot
+![screenshot of application](https://github.com/Flumanuck/readme-generator/blob/main/Readme-Generator-Screenshot.PNG?raw=true)
