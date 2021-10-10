@@ -29,6 +29,18 @@ const questions = [
     name: "usage",
     message: "How is the app supposed to be used?",
   },
+  //Contributing
+  {
+    type: "input",
+    name: "contributing",
+    message: "How can someone contribute to the application?",
+  },
+  //Tests
+  {
+    type: "input",
+    name: "test",
+    message: "How do you run the tests for your application?",
+  },
   //License
   {
     type: "list",
@@ -45,18 +57,6 @@ const questions = [
       "The Unlicense",
       "None",
     ],
-  },
-  //Contributing
-  {
-    type: "input",
-    name: "contributing",
-    message: "How can someone contribute to the application?",
-  },
-  //Tests
-  {
-    type: "input",
-    name: "test",
-    message: "How do you run the tests for your application?",
   },
 ];
 

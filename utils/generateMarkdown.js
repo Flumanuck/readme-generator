@@ -48,33 +48,33 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//   if (license == "None") {
-//     return "";
-//   } else if (license == "MIT License") {
-//     return "";
-//   } else if (license == "GNU AGPLv3") {
-//     return "";
-//   } else if (license == "GNU GPLv3") {
-//     return "";
-//   } else if (license == "GNU LGPLv3") {
-//     return "";
-//   } else if (license == "Mozilla Public License 2.0") {
-//     return "";
-//   } else if (license == "Apache License 2.0") {
-//     return "";
-//   } else if (license == "Boost Software License 1.0") {
-//     return "";
-//   } else if (license == "The Unlicense") {
-//     return "";
-//   }
-// }
+function renderLicenseSection(license) {
+  if (license == "None") {
+    return "";
+  } else if (license == "MIT License") {
+    return "";
+  } else if (license == "GNU AGPLv3") {
+    return "";
+  } else if (license == "GNU GPLv3") {
+    return "";
+  } else if (license == "GNU LGPLv3") {
+    return "";
+  } else if (license == "Mozilla Public License 2.0") {
+    return "";
+  } else if (license == "Apache License 2.0") {
+    return "";
+  } else if (license == "Boost Software License 1.0") {
+    return "";
+  } else if (license == "The Unlicense") {
+    return "";
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
-  // const licenseSection = renderLicenseSection(data.license);
+  const licenseSection = renderLicenseSection(data.license);
 
   return `# ${data.title}
 
@@ -82,9 +82,9 @@ function generateMarkdown(data) {
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
 * [Contributing](#contributing)
 * [Test](#test)
+* [License](#license)
 
 ## Description
 ${data.description}
@@ -95,16 +95,16 @@ ${data.installation}
 ## Usage 
 ${data.usage}
 
-## License
-${licenseBadge}
-${licenseLink}
-${licenseSection}
-
 ## Contributing
 ${data.contributing}
 
 ## Test
 ${data.test}
+
+## License
+${licenseBadge}
+${licenseLink}
+${licenseSection}
 `;
 }
 
